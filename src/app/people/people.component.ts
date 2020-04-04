@@ -12,4 +12,14 @@ import { Component } from '@angular/core';
 })
 export class PeopleComponent {
 
+  addPerson = false;
+
+  constructor(){
+    setTimeout(
+      () => {
+        this.addPerson = true;
+      }
+      , 3000);
+  }
+
 }
