@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonComponent {
 
-  constructor() { }
+  name:string = "Miguel";
+  lastname:string = "Torres";
+  age:number = 30;
 
 }
