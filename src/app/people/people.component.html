@@ -1,8 +1,15 @@
 <div class="container">
   <div class="row">
      <div class="col">
+       <label>Title</label>
+       <input
+       type="text"
+       class="form-control"
+       (input)="onModifyPerson($event)">
+       {{title}}
       <h1>People List</h1>
-      <button class="btn btn-primary" [disabled]="!addPerson">Add Person</button>
+      <button class="btn btn-primary" [disabled]="!addPerson" (click)="onCreatePerson()">Add Person</button>
+      <p>{{addPersonStatus}}</p>
       <app-person></app-person>
      </div>
   </div>
