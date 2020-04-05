@@ -5,7 +5,7 @@
        <input
        type="text"
        class="form-control"
-       (input)="onModifyPerson($event)">
+       [(ngModel)]="title">
        {{title}}
       <h1>People List</h1>
       <button class="btn btn-primary" [disabled]="!addPerson" (click)="onCreatePerson()">Add Person</button>

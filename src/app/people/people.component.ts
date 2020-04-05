@@ -14,7 +14,7 @@ export class PeopleComponent {
 
   addPerson = false;
   addPersonStatus = 'No people added yet';
-  title = '';
+  title = 'Engineer';
 
   constructor(){
     setTimeout(

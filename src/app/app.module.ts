@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PeopleComponent } from './people/people.component';
@@ -10,7 +11,8 @@ import { PersonComponent } from './person/person.component';
     AppComponent, PeopleComponent, PersonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
