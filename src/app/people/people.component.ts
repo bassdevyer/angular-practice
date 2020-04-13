@@ -15,6 +15,7 @@ export class PeopleComponent {
   addPerson = false;
   addPersonStatus = 'No people added yet';
   title = 'Engineer';
+  personCreated = false;
 
   constructor(){
     setTimeout(
@@ -25,6 +26,7 @@ export class PeopleComponent {
   }
 
   onCreatePerson(){
+    this.personCreated = true;
     this.addPersonStatus = 'Person added';
   }
 
